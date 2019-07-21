@@ -10,7 +10,7 @@ client.on('data', function (msg) {
 
 const args = process.argv.slice(2)
 const command = args[0]
-const amount = parseInt(args[1])
+const amount = Math.abs(parseInt(args[1]))
 
 switch (command){
     case 'balance':
@@ -20,10 +20,12 @@ switch (command){
         client.end({cmd: 'deposit', amount: amount})
         break
     case 'withdraw':
-        client.end({cmd: 'withdraw'})
+        client.end({cmd: 'withdraw', amount: amount})
         break
     default:
         break
 }
+
+console.log("started teller")
 
 

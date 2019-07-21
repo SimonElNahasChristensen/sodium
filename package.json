@@ -1,0 +1,25 @@
+{
+  "name": "learntocrypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bank.js",
+  "dependencies": {
+    "duplex-json-stream": "^1.0.1",
+    "net": "^1.0.2",
+    "sodium-native": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonElNahasChristensen/sodium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonElNahasChristensen/sodium/issues"
+  },
+  "homepage": "https://github.com/SimonElNahasChristensen/sodium#readme"
+}
